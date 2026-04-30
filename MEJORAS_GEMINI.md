@@ -66,6 +66,21 @@ Este documento detalla el proceso de transformación de la aplicación utilizand
 
 ---
 
+### 4. Optimización de Detalle de Curso y Lógica de Inscripción
+**Prompt usado:**
+> "Actúa como un Desarrollador Senior de Android y experto en UX/UI. Estoy trabajando en la pantalla de 'Detalle del Curso'. Necesito:
+> 1. Mejorar la UI con Material 3 (imagen de cabecera, mejor jerarquía y botón destacado).
+> 2. Implementar la lógica para que al presionar 'Inscribirse', el curso se agregue a la lista de 'Mis Cursos' en el Perfil.
+> 3. Agregar feedback visual (Snackbar) para confirmar la inscripción."
+
+**Resultado:**
+| Vista de Detalle | Confirmación (Snackbar) |
+|---|---|
+| ![Detalle Después](capturas/detalle_despues.png) | ![Inscripción Éxito](capturas/inscripcion_ok.png) |
+
+---
+---
+
 ## 🧠 Reflexión Final
 El uso de Gemini permitió identificar puntos ciegos en la jerarquía visual y la usabilidad que no eran evidentes inicialmente. La IA facilitó la implementación de componentes avanzados de Material 3, logrando un prototipo mucho más profesional, fluido y centrado en el usuario final en un tiempo récord.
 
