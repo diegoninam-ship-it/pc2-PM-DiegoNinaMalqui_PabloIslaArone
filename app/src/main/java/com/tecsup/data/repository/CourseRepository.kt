@@ -14,7 +14,7 @@ object CourseRepository {
             category = "Programación",
             duration = "5h",
             description = "Aprende Kotlin desde cero con las mejores prácticas de programación moderna.",
-            image = "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?q=80&w=500&auto=format&fit=crop",
+            image = "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=500&auto=format&fit=crop",
             isNew = true
         ),
         Course(
@@ -25,7 +25,7 @@ object CourseRepository {
             category = "Diseño",
             duration = "8h",
             description = "Domina las herramientas de diseño y crea interfaces de usuario impactantes y funcionales.",
-            image = "https://images.unsplash.com/photo-1561070791-26c11d6f9a3d?q=80&w=500&auto=format&fit=crop",
+            image = "https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=500&auto=format&fit=crop",
             isPopular = true
         ),
         Course(
@@ -68,7 +68,7 @@ object CourseRepository {
             category = "Negocios",
             duration = "9h",
             description = "Todo lo que necesitas saber para lanzar y escalar tu propia empresa tecnológica.",
-            image = "https://images.unsplash.com/photo-1556761175-b413da4baf72?q=80&w=500&auto=format&fit=crop",
+            image = "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=500&auto=format&fit=crop",
             isPopular = true
         )
     )

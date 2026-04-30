@@ -79,9 +79,22 @@ Este documento detalla el proceso de transformación de la aplicación utilizand
 | ![Detalle Después](capturas/detalle_despues.png) | ![Inscripción Éxito](capturas/inscripcion_ok.png) |
 
 ---
+
+## 5 y 6. ✨ Implementación de Diseño Moderno y Auditoría de Flujo (Evidencia Total)
+
+### 📱 Galería de Flujo Completo:
+
+| Pantalla | Captura de Pantalla (Diseño Final Material 3) |
+| :--- | :--- |
+| **1. Login** | ![Login Final](capturas/login_final.png) |
+| **2. Home (Dashboard)** | ![Home Final](capturas/home_final.png) |
+| **3. Lista de Cursos** | ![Cursos Final](capturas/cursos_final.png) |
+| **4. Detalle de Curso** | ![Detalle Final](capturas/detalle_final.png) |
+| **5. Perfil / Mis Cursos** | ![Perfil Final](capturas/perfil_final.png) |
+
 ---
 
 ## 🧠 Reflexión Final
-El uso de Gemini permitió identificar puntos ciegos en la jerarquía visual y la usabilidad que no eran evidentes inicialmente. La IA facilitó la implementación de componentes avanzados de Material 3, logrando un prototipo mucho más profesional, fluido y centrado en el usuario final en un tiempo récord.
+La integración de Gemini permitió transformar un prototipo funcional básico en una aplicación con estándares profesionales de UI/UX. La IA facilitó la implementación de componentes complejos de Material 3 y la optimización de la arquitectura de navegación, logrando un producto final centrado en el usuario y técnicamente sólido.
 
 ---
