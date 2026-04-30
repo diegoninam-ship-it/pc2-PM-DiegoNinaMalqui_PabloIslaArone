@@ -13,9 +13,7 @@ import com.tecsup.ui.navigation.NavRoutes
 fun HomeScreen(navController: NavController) {
 
     Scaffold(
-        topBar = {
-            TopAppBar(title = { Text("EduTech") })
-        }
+        topBar = { TopAppBar(title = { Text("EduTech") }) }
     ) { padding ->
 
         Column(
@@ -24,22 +22,20 @@ fun HomeScreen(navController: NavController) {
                 .padding(16.dp)
         ) {
 
-            Text("Bienvenido 👋", style = MaterialTheme.typography.headlineSmall)
+            Text("Hola, Diego 👋", style = MaterialTheme.typography.headlineSmall)
 
             Spacer(modifier = Modifier.height(16.dp))
 
-            ElevatedCard(onClick = {
-                navController.navigate(NavRoutes.Courses.route)
-            }) {
-                Text("📚 Explorar Cursos", modifier = Modifier.padding(16.dp))
+            ElevatedCard(onClick = { navController.navigate("courses") }) {
+                Text("📚 Cursos", modifier = Modifier.padding(16.dp))
             }
 
-            Spacer(modifier = Modifier.height(12.dp))
+            ElevatedCard(onClick = { navController.navigate("profile") }) {
+                Text("🎯 Mis Cursos", modifier = Modifier.padding(16.dp))
+            }
 
-            ElevatedCard(onClick = {
-                navController.navigate(NavRoutes.Profile.route)
-            }) {
-                Text("👤 Mi Perfil", modifier = Modifier.padding(16.dp))
+            ElevatedCard(onClick = { navController.navigate("profile") }) {
+                Text("👤 Perfil", modifier = Modifier.padding(16.dp))
             }
         }
     }

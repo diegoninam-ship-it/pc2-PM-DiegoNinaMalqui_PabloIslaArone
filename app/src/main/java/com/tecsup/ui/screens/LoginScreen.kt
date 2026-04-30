@@ -14,50 +14,38 @@ fun LoginScreen(navController: NavController) {
     var email by remember { mutableStateOf("") }
     var password by remember { mutableStateOf("") }
 
-    Scaffold {
+    Scaffold { padding ->
+
         Column(
             modifier = Modifier
-                .padding(it)
-                .fillMaxSize()
+                .padding(padding)
                 .padding(24.dp),
             verticalArrangement = Arrangement.Center
         ) {
 
-            Text(
-                "EduTech Academy",
-                style = MaterialTheme.typography.headlineLarge
-            )
-
-            Spacer(modifier = Modifier.height(24.dp))
-
-            OutlinedTextField(
-                value = email,
-                onValueChange = { email = it },
-                label = { Text("Correo") },
-                modifier = Modifier.fillMaxWidth()
-            )
-
-            Spacer(modifier = Modifier.height(12.dp))
-
-            OutlinedTextField(
-                value = password,
-                onValueChange = { password = it },
-                label = { Text("Contraseña") },
-                modifier = Modifier.fillMaxWidth()
-            )
+            Text("EduTech Academy", style = MaterialTheme.typography.headlineLarge)
 
             Spacer(modifier = Modifier.height(20.dp))
+
+            OutlinedTextField(email, { email = it }, label = { Text("Correo") })
+            OutlinedTextField(password, { password = it }, label = { Text("Contraseña") })
+
+            Spacer(modifier = Modifier.height(16.dp))
 
             Button(
                 onClick = {
                     if (email.isNotEmpty() && password.isNotEmpty()) {
-                        navController.navigate(NavRoutes.Home.route)
+                        navController.navigate("home")
                     }
                 },
-                modifier = Modifier.fillMaxWidth(),
-                shape = MaterialTheme.shapes.large
+                modifier = Modifier.fillMaxWidth()
             ) {
                 Text("Ingresar")
+            }
+
+            // ✅ REGISTRO SIMPLE
+            TextButton(onClick = { /* simulado */ }) {
+                Text("¿No tienes cuenta? Regístrate")
             }
         }
     }
